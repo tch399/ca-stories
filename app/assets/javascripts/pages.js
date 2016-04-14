@@ -1,0 +1,14 @@
+$("#button").toggle(
+  function() {
+    $("#right").animate({  left: 250}, "slow", function(){
+      $("#button").html("close");
+      });
+    },
+  function() {
+    $("#right").animate({ left: 0}, "slow", function() {
+      $("#button").html("Menu");
+      });
+    }
+  );
+
+
